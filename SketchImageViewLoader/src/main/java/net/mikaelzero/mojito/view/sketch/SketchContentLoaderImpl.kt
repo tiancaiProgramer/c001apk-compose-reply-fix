@@ -39,6 +39,7 @@ class SketchContentLoaderImpl : ContentLoader, LifecycleObserver {
     private var screenWidth = 0
     private var longImageHeightOrWidth = 0
     private var onMojitoViewCallback: OnMojitoViewCallback? = null
+    private var animationFinished = false
 
     override fun providerRealView(): View {
         return sketchImageView
@@ -159,9 +160,11 @@ class SketchContentLoaderImpl : ContentLoader, LifecycleObserver {
     }
 
     override fun backToNormal() {
+        if (animationFinished) loadAnimFinish()
     }
 
     override fun loadAnimFinish() {
+        animationFinished = true
         if (isLongHeightImage || isLongWidthImage) {
 
         } else {
@@ -179,6 +182,7 @@ class SketchContentLoaderImpl : ContentLoader, LifecycleObserver {
     }
 
     override fun isLongImage(width: Int, height: Int): Boolean {
+        if (width <= 0 || height <= 0) return false
         isLongHeightImage = height > width * 40f / 9f
         isLongWidthImage = width > height * 8 && width > (ScreenUtils.getScreenWidth(sketchImageView.context) * 2)
         sketchImageView.zoomer?.isReadMode = isLongHeightImage || isLongWidthImage
@@ -190,7 +194,8 @@ class SketchContentLoaderImpl : ContentLoader, LifecycleObserver {
         if (isLongHeightImage || isLongWidthImage) {
 
         } else {
-            sketchImageView.scaleType = ImageView.ScaleType.CENTER_CROP
+            sketchImageView.scaleType = if (animationFinished) ImageView.ScaleType.FIT_CENTER
+                else ImageView.ScaleType.CENTER_CROP
         }
         return isLongHeightImage || isLongWidthImage
     }

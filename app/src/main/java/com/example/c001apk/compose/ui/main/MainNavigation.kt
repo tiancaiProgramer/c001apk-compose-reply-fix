@@ -882,6 +882,10 @@ fun NavHostController.navigateToUser(uid: String) {
 }
 
 fun NavHostController.navigateToTopic(tag: String?, id: String?) {
+    if (tag == "二手交易" && id == null) {
+        navigateToCarousel("V9_CHANNEL_ERSHOU", "二手交易")
+        return
+    }
     navigate("${Router.TOPIC.name}/$tag/$id")
 }
 
@@ -907,7 +911,10 @@ fun NavHostController.navigateToApp(packageName: String) {
 }
 
 fun NavHostController.navigateToCarousel(url: String, title: String) {
-    navigate("${Router.CAROUSEL.name}/${url.encode}/$title")
+    val displayTitle = title.ifBlank {
+        if (url.contains("ershou", ignoreCase = true)) "二手交易" else title
+    }
+    navigate("${Router.CAROUSEL.name}/${url.encode}/${displayTitle.encode}")
 }
 
 fun NavHostController.navigateToEvent(id: String) {

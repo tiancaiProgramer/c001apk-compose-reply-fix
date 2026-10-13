@@ -67,6 +67,7 @@ fun TopicContentScreen(
 
     CommonScreen(
         viewModel = viewModel,
+        useTradeGrid = url.contains("ershou", ignoreCase = true),
         refreshState = refreshState,
         resetRefreshState = resetRefreshState,
         paddingValues = paddingValues,

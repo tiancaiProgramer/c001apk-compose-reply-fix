@@ -298,6 +298,10 @@ fun FeedMessage(
         )
     }
 
+    data.secondHandInfo?.let {
+        SecondHandInfoRow(it, modifier = modifier.padding(top = 10.dp), onOpenLink = onOpenLink)
+    }
+
     if (!data.forwardSourceType.isNullOrEmpty()) {
         if (data.forwardSourceFeed == null) {
             Text(

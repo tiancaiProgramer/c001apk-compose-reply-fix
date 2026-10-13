@@ -573,12 +573,17 @@ internal class MediaContentLoader(
             return
         }
         playing = true
-        root.setBackgroundColor(Color.BLACK)
-        textureView.animate()
-            .alpha(1f)
-            .setDuration(LAYER_CROSSFADE_DURATION_MS)
-            .setInterpolator(LAYER_CROSSFADE_INTERPOLATOR)
-            .start()
+        // ExoPlayer's first-frame event can precede TextureView's next composition.
+        // Keep the still underneath and reveal the video on the next display frame.
+        textureView.postOnAnimation {
+            if (!disposed && playing && canPlay() && !playbackFinished) {
+                textureView.animate()
+                    .alpha(1f)
+                    .setDuration(LAYER_CROSSFADE_DURATION_MS)
+                    .setInterpolator(LAYER_CROSSFADE_INTERPOLATOR)
+                    .start()
+            }
+        }
     }
 
     override fun onVideoSizeChanged(width: Int, height: Int, pixelWidthHeightRatio: Float) {

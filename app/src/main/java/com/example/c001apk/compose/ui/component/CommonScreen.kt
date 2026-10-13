@@ -54,6 +54,7 @@ fun CommonScreen(
     onShowProductConfigComparison: (() -> Unit)? = null,
     onShowGlobalProductComparison: (() -> Unit)? = null,
     onToggleProductEntityComparison: ((HomeFeedResponse.Entities) -> Unit)? = null,
+    useTradeGrid: Boolean = false,
 ) {
 
     val view = LocalView.current
@@ -71,7 +72,7 @@ fun CommonScreen(
         }
     }
 
-    isScrollingUp?.let {
+    if (!useTradeGrid) isScrollingUp?.let {
         it(lazyListState.isScrollingUp())
     }
 
@@ -93,7 +94,10 @@ fun CommonScreen(
             )
         }
     ) {
-        LazyColumn(
+        if (useTradeGrid) {
+            SecondHandGrid(viewModel, paddingValues, refreshState, onViewFeed, onViewUser,
+                onOpenLink, isScrollingUp)
+        } else LazyColumn(
             modifier = Modifier
                 .fillMaxSize(),
             contentPadding = PaddingValues(

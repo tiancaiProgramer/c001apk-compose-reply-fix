@@ -33,12 +33,8 @@ public class SketchImageLoadFactory implements ImageViewLoadFactory {
             }
 
             helper.commit();
-
-            sketchView.post(() -> {
-                if (sketchView.getZoomer() != null) {
-                    sketchView.getZoomer().reset("postLoad");
-                }
-            });
+            // Sketch resets the matrix when the decoded drawable arrives. Resetting immediately
+            // after commit races that asynchronous load and discards the thumbnail's zoom state.
         }
     }
 

@@ -46,7 +46,6 @@ import com.example.c001apk.media.MojitoMediaImageFactory
 import com.example.c001apk.media.MojitoMediaPlaybackSession
 import com.example.c001apk.media.RichMediaHint
 import com.example.c001apk.media.coolApkRichMediaHint
-import com.example.c001apk.media.mayContainCoolApkRichMedia
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -85,10 +84,7 @@ object ImageShowUtil {
             else it.http2https
         }
         val autoLoadOriginal = shouldAutoLoadTarget()
-        val thumbnailList = urlList.mapIndexed { index, url ->
-            if (autoLoadOriginal || !originList[index].mayContainCoolApkRichMedia()) url.http2https
-            else originList[index]
-        }
+        val thumbnailList = urlList.map { it.http2https }
         Mojito.start(imageView.context) {
             urls(thumbnailList, originList)
             val mediaFactories = enableRichMedia(
@@ -174,7 +170,6 @@ object ImageShowUtil {
         val autoLoadOriginal = shouldAutoLoadTarget()
         val thumbnailList = urlList.mapIndexed { index, url ->
             when {
-                !autoLoadOriginal && originList[index].mayContainCoolApkRichMedia() -> originList[index]
                 url.contains(SUFFIX_THUMBNAIL) -> url.http2https
                 else -> "${originList[index]}$SUFFIX_THUMBNAIL"
             }
@@ -526,16 +521,11 @@ object ImageShowUtil {
     }
 
     fun getImageLp(url: String): Pair<Int, Int> {
-        var imgWidth = 1
-        var imgHeight = 1
-        val at = url.lastIndexOf("@")
-        val x = url.lastIndexOf("x")
-        val dot = url.lastIndexOf(".")
-        if (at != -1 && x != -1 && dot != -1) {
-            imgWidth = url.substring(at + 1, x).toInt()
-            imgHeight = url.substring(x + 1, dot).toInt()
-        }
-        return Pair(imgWidth, imgHeight)
+        val match = Regex("@(\\d+)x(\\d+)(?:\\.|$)")
+            .find(url.substringBefore('?').substringBefore('#')) ?: return 1 to 1
+        val width = match.groupValues[1].toIntOrNull()?.takeIf { it > 0 } ?: 1
+        val height = match.groupValues[2].toIntOrNull()?.takeIf { it > 0 } ?: 1
+        return width to height
     }
 
     private fun MojitoBuilder.enableRichMedia(

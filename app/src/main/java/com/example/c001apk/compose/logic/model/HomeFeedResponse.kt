@@ -198,6 +198,8 @@ data class HomeFeedResponse(
         val userInfo: UserInfo?,
         val fUserInfo: UserInfo?,
         var isFollow: Int?,
+        @SerializedName("ershou_info")
+        val secondHandInfo: SecondHandInfo? = null,
     ) : Parcelable
 
     @Parcelize
@@ -391,6 +393,13 @@ data class HomeFeedResponse(
         @SerializedName("product_specs")
         val productSpecs: List<String>?,
         val userInfo: UserInfo?,
+        val picArr: List<String>? = null,
+        @SerializedName("message_title")
+        val messageTitle: String? = null,
+        val entityId: String? = null,
+        val feedType: String? = null,
+        @SerializedName("ershou_info")
+        val secondHandInfo: SecondHandInfo? = null,
     ) : Parcelable
 
 }

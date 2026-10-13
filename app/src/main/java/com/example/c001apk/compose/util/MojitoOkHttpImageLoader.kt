@@ -1,7 +1,9 @@
 package com.example.c001apk.compose.util
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import android.net.Uri
+import coil.imageLoader
 import net.mikaelzero.mojito.loader.ImageLoader
 import okhttp3.Call
 import okhttp3.OkHttpClient
@@ -13,7 +15,7 @@ import java.security.MessageDigest
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.concurrent.thread
 
-class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
+class MojitoOkHttpImageLoader(private val context: Context) : ImageLoader {
 
     private val client = OkHttpClient.Builder()
         .addInterceptor(AddCookiesInterceptor)
@@ -45,7 +47,7 @@ class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
         }
 
         if (onlyRetrieveFromCache) {
-            if (cacheFile.exists()) {
+            if (usableCachedImage(cacheFile) || importCoilCache(uri, cacheFile)) {
                 callback.onSuccess(cacheFile)
             } else {
                 callback.onFail(IOException("cache miss"))
@@ -55,13 +57,18 @@ class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
         }
 
         if (cacheFile.exists()) {
-            if (cacheFile.length() > 0) {
+            if (usableCachedImage(cacheFile)) {
                 callback.onSuccess(cacheFile)
                 callback.onFinish()
                 return
             } else {
                 cacheFile.delete()
             }
+        }
+        if (importCoilCache(uri, cacheFile)) {
+            callback.onSuccess(cacheFile)
+            callback.onFinish()
+            return
         }
 
         if (!cacheDir.exists()) {
@@ -70,8 +77,9 @@ class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
 
         val request = Request.Builder().url(uri.toString()).build()
         val call = client.newCall(request)
-        callMap[requestId] = call
+        callMap.put(requestId, call)?.cancel()
         thread(name = "mojito-loader-$requestId") {
+            var tempFile: File? = null
             try {
                 call.execute().use { response ->
                     if (!response.isSuccessful) {
@@ -79,19 +87,19 @@ class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
                     }
                     val body = response.body ?: throw IOException("empty body")
                     val total = body.contentLength().coerceAtLeast(0L)
-                    val tempFile = File(cacheDir, "${cacheFile.name}.tmp")
-                    if (tempFile.exists()) {
-                        tempFile.delete()
-                    }
+                    // Preview, prefetch and target requests may download the same URL concurrently.
+                    // Each writer owns a temp file; a cancelled request must not damage another one.
+                    val downloadFile = File.createTempFile("${cacheFile.name}.", ".tmp", cacheDir)
+                    tempFile = downloadFile
+                    var current = 0L
                     body.byteStream().use { input ->
-                        FileOutputStream(tempFile).use { output ->
+                        FileOutputStream(downloadFile).use { output ->
                             val buffer = ByteArray(DEFAULT_BUFFER_SIZE)
                             var read: Int
-                            var current = 0L
                             while (input.read(buffer).also { read = it } != -1) {
                                 output.write(buffer, 0, read)
+                                current += read
                                 if (total > 0L) {
-                                    current += read
                                     val progress = ((current * 100) / total).toInt()
                                     callback.onProgress(progress)
                                 }
@@ -99,23 +107,63 @@ class MojitoOkHttpImageLoader(context: Context) : ImageLoader {
                             output.flush()
                         }
                     }
-                    if (!tempFile.renameTo(cacheFile)) {
-                        throw IOException("cache rename failed")
+                    if (current == 0L || (total > 0L && current != total) ||
+                        !hasImageBounds(downloadFile)) {
+                        throw IOException("incomplete image download")
                     }
-                    callback.onSuccess(cacheFile)
+                    if (!call.isCanceled()) {
+                        synchronized(cacheDir) {
+                            if (cacheFile.length() == 0L && !downloadFile.renameTo(cacheFile)) {
+                                throw IOException("cache rename failed")
+                            }
+                        }
+                        callback.onSuccess(cacheFile)
+                    }
                 }
             } catch (e: Exception) {
-                if (e !is IOException && e.cause is IOException) {
+                if (call.isCanceled()) {
+                    // Cancellation belongs to a closed/replaced view and has no UI result.
+                } else if (e !is IOException && e.cause is IOException) {
                     callback.onFail(e.cause as IOException)
                 } else {
                     callback.onFail(e)
                 }
             } finally {
+                tempFile?.delete()
                 callback.onFinish()
-                callMap.remove(requestId)
+                callMap.remove(requestId, call)
             }
         }
     }
+
+    private fun hasImageBounds(file: File): Boolean {
+        if (file.length() == 0L) return false
+        val options = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeFile(file.absolutePath, options)
+        return options.outWidth > 0 && options.outHeight > 0
+    }
+
+    private fun usableCachedImage(file: File): Boolean {
+        if (!file.exists()) return false
+        if (hasImageBounds(file)) return true
+        file.delete()
+        return false
+    }
+
+    private fun importCoilCache(uri: Uri, destination: File): Boolean = runCatching {
+        context.imageLoader.diskCache?.openSnapshot(uri.toString())?.use { snapshot ->
+            if (!hasImageBounds(snapshot.data.toFile())) return@use false
+            val tempFile = File.createTempFile("coil-preview-", ".tmp", cacheDir)
+            try {
+                snapshot.data.toFile().copyTo(tempFile, overwrite = true)
+                synchronized(cacheDir) {
+                    destination.length() > 0L || tempFile.renameTo(destination)
+                }
+            } finally {
+                tempFile.delete()
+            }
+        } ?: false
+    }.getOrDefault(false)
 
     override fun prefetch(uri: Uri) {
         loadImage(uri.hashCode(), uri, false, object : ImageLoader.Callback {

@@ -25,9 +25,16 @@ android {
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "com.example.c001apk.replyfix"
+        applicationId = providers.gradleProperty("testApplicationId")
+            .orElse("com.example.c001apk.replyfix").get()
+        manifestPlaceholders["applicationLabel"] =
+            if (providers.gradleProperty("testApplicationId").isPresent) "c001apk 独立测试"
+            else "@string/app_name"
         minSdk = 24
         targetSdk = 35
+        // The app has one default Chinese string set. Keep Chinese variants and the
+        // libraries' English fallback instead of packaging their unused translations.
+        resourceConfigurations += listOf("zh", "en")
         versionCode = providers.gradleProperty("releaseVersionCode").orElse(gitCommitCount.toString()).get().toInt()
         versionName = providers.gradleProperty("releaseVersionName").orElse(gitCommitHash).get()
 

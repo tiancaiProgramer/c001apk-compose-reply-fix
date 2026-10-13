@@ -125,6 +125,7 @@ fun CarouselScreen(
                         HorizontalDivider()
                         CommonScreen(
                             viewModel = viewModel,
+                            useTradeGrid = url.decode.contains("ershou", ignoreCase = true),
                             refreshState = null,
                             resetRefreshState = {},
                             paddingValues = PaddingValues(
