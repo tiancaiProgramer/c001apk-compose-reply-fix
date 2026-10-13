@@ -6,7 +6,7 @@
 
 ## 修复内容
 
-- Token 时间使用 `(System.currentTimeMillis() / 1000L).toString()`，不再转换为 float。
+- Token 时间规范化为 `(System.currentTimeMillis() / 1000L).toString()`，不再转换为 float。这是保留的代码改进，不是本次恢复评论的必要条件。
 - 保留原 v2 Token 算法。发表评论时，Device 第 0 段读取使用者自己的“数字联盟 ID”设置；Token 输入与实际发送的 Device 一致。
 - 保存 ID 时同步更新 Device 首段，保留其余字段，避免随机更换 MAC 或把旧 ID 留在 Device 中。
 - 保留原 Cookie、登录流程和评论 Body，包括 `replyAndForward=0`。
@@ -17,12 +17,14 @@
 这是**需要本人有效 ID 配置的实验版本**，尚未实现自动获取数字联盟 ID。不要把它描述为“所有设备安装即用”。
 
 1. 安装 Release 中的 APK，使用自己的账号登录。
-2. 在设置 → 数字联盟 ID 中填入**自己有效的标识**，保存后重新进入动态发布评论。
-3. 不知道如何获得本人有效值时，请等待后续自动获取方案。不要使用别人分享的 ID、Cookie 或 Device。
+2. 获取本人 ShuzlmID：酷安官方 App → 设置 → 关于 → 右上角三点 → 检测日志 → 连点“复制 OAID”4 下；粘贴复制出的内容，找到其中的 `ShuzlmID`。
+3. 在本客户端设置 → 数字联盟 ID 中填入上述 **ShuzlmID**，保存后重新进入动态发布评论。虽然官方入口名为“复制 OAID”，这里需要填写的是日志中的 ShuzlmID，而非 OAID。不要使用别人分享的 ID、Cookie 或 Device。
 
 没有有效标识时，单独修复时间格式仍可能收到 `err_request_need_upgrade_new_version`。任意随机 36 位文本是否有效没有得到验证。Root / Frida 用于开发验证，运行本版本不要求 Root / Frida。
 
 ## 验证依据
+
+2026-10-13，使用者补充手动测试：原版 925abdb 保持原时间代码，仅将“数字联盟 ID”设置改为本人从官方检测日志取得的 36 位 ShuzlmID 后，评论成功。因此，在本次设备与账号测试中，此前失败的关键原因是该设置填写了错误标识；正确配置 ShuzlmID 即可恢复回复，无需修改原版时间代码。
 
 同一小米 15、同一账号、网络、动态下的请求对照表明：整数秒时间版仍失败；仅替换 Device 第 0 段并重新生成配套 v2 Token 后成功；仅更换 MAC 段、最后一段或删除 replyAndForward=0 均未解决问题。
 
