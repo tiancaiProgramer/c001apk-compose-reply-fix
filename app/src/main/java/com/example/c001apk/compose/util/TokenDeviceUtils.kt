@@ -29,7 +29,7 @@ object TokenDeviceUtils {
     }
 
     fun String.getTokenV2(): String {
-        val timeStamp = (System.currentTimeMillis() / 1000f).toString()
+        val timeStamp = (System.currentTimeMillis() / 1000L).toString()
 
         val base64TimeStamp = timeStamp.getBase64()
         val md5TimeStamp = timeStamp.getMD5()

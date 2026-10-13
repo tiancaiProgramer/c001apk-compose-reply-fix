@@ -25,7 +25,7 @@ android {
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "com.example.c001apk.compose"
+        applicationId = "com.example.c001apk.timefix"
         minSdk = 24
         targetSdk = 35
         versionCode = gitCommitCount
