@@ -5,6 +5,7 @@ import com.example.c001apk.compose.FollowType
 import com.example.c001apk.compose.ThemeMode
 import com.example.c001apk.compose.ThemeType
 import com.example.c001apk.compose.logic.model.HapticStrength
+import com.example.c001apk.compose.util.TokenDeviceUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -35,7 +36,10 @@ class UserPreferencesDataSource @Inject constructor(
     }
 
     suspend fun setSZLMId(value: String) = withContext(Dispatchers.IO) {
-        userPreferences.updateData { it.copy(szlmId = value) }
+        // Modified 2026-10-13: save the ID and matching Device atomically; preserve other segments.
+        userPreferences.updateData {
+            it.copy(szlmId = value, xAppDevice = TokenDeviceUtils.withFirstComponent(it.xAppDevice, value))
+        }
     }
 
     suspend fun setImageQuality(value: Int) = withContext(Dispatchers.IO) {

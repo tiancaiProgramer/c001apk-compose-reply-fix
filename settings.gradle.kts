@@ -13,9 +13,9 @@ pluginManagement {
 }
 
 gradle.settingsEvaluated {
-    val currentBranch = providers.exec {
+    val currentBranch = if (file(".git").exists()) providers.exec {
         commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
-    }.standardOutput.asText.map { it.trim() }.get()
+    }.standardOutput.asText.map { it.trim() }.get() else "source-archive"
     logger.lifecycle("当前 Git 分支: $currentBranch。请确认分支正确！若需切换：git checkout <branch>")
 }
 

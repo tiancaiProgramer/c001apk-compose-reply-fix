@@ -1,0 +1,17 @@
+c001apk-compose Reply Fix
+
+Derived from bggRGjQaUbCoE/c001apk-compose and frisk1127/c001apk-compose.
+Upstream authors and contributors retain copyright in their contributions.
+Copyright (C) 2026 tiancaiProgramer for this fork's new modifications.
+
+Modified on 2026-10-13: integer-second Token timestamps, per-user runtime
+Device first-component configuration, corresponding settings synchronization,
+standalone packaging, source attribution and release documentation.
+
+This derivative is distributed under GNU Affero General Public License v3.
+No warranty is provided. Existing third-party notices remain applicable.
+This project is not an official Coolapk client and is not endorsed by its
+service operator or upstream authors. No personal test identifiers or account
+credentials are included in the public source or APK.
+
+See LICENSE, AUTHORS.md and THIRD_PARTY_NOTICES.md.

@@ -12,16 +12,12 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
 }
 
-val gitCommitCount = providers.exec {
+val gitCommitCount = if (rootProject.file(".git").exists()) providers.exec {
     commandLine("git", "rev-list", "HEAD", "--count")
-}.standardOutput.asText.map { it.trim().toInt() }.get()
-val gitCommitHash = providers.exec {
+}.standardOutput.asText.map { it.trim().toInt() }.get() else 248
+val gitCommitHash = if (rootProject.file(".git").exists()) providers.exec {
     commandLine("git", "rev-parse", "--verify", "--short", "HEAD")
-}.standardOutput.asText.map { it.trim() }.get()
-
-// Private experimental input; no captured identifier is stored in source control.
-val replyFirstComponentBase64 = providers.gradleProperty("replyFirstComponentBase64").orElse("").get()
-require(replyFirstComponentBase64.matches(Regex("[A-Za-z0-9+/=]*")))
+}.standardOutput.asText.map { it.trim() }.get() else "source-archive"
 
 android {
     namespace = "com.example.c001apk.compose"
@@ -29,12 +25,11 @@ android {
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "com.example.c001apk.timefirst"
+        applicationId = "com.example.c001apk.replyfix"
         minSdk = 24
         targetSdk = 35
-        versionCode = gitCommitCount
-        versionName = gitCommitHash
-        buildConfigField("String", "REPLY_FIRST_COMPONENT_BASE64", "\"$replyFirstComponentBase64\"")
+        versionCode = providers.gradleProperty("releaseVersionCode").orElse(gitCommitCount.toString()).get().toInt()
+        versionName = providers.gradleProperty("releaseVersionName").orElse(gitCommitHash).get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

@@ -1,0 +1,139 @@
+THIRD-PARTY SOURCE NOTICES — retained original file headers
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/DiskLruCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/Stopwatch.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/NoSpaceException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/UnableCreateDirException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/LruCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/UnableCreateFileException.java
+/*
+ * Copyright (C) 2011 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Files: app/src/main/java/com/example/c001apk/compose/view/SmoothInputLayout.kt
+/*
+ * Copyright (C) 2015 AlexMofer
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/Initializer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/Configuration.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/Sketch.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/Key.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/SLog.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/AssetsDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/ContentDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/ByteArrayDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/DrawableDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/FileDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/DiskCacheDataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/datasource/DataSource.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/cache/LruDiskCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/cache/BitmapPoolUtils.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchGifDrawableImpl.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchTransitionDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchShapeBitmapDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchRefBitmap.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchRefDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchGifFactory.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchGifDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchLoadingDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/drawable/SketchBitmapDrawable.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/KeyCounter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/DrawableWrapper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/SketchMD5Utils.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/SketchUtils.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/util/ObjectPool.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/state/OldStateImage.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/state/StateImage.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/state/MemoryCacheStateImage.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/state/DrawableStateImage.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/state/MakerStateImage.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/shaper/CircleImageShaper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/shaper/RoundRectImageShaper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/shaper/ImageShaper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/GifDecodeResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ProcessedResultCacheProcessor.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ProcessException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageAttrs.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ProcessImageResultProcessor.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ProcessedCacheDecodeHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/NormalDecodeHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/DecodeResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageOrientationCorrector.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/DecodeHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageSizeCalculator.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ProcessedImageCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ResultProcessor.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/CorrectOrientationException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ResizeCalculator.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageType.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ThumbnailModeDecodeHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/NotFoundGifLibraryException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageDecodeUtils.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/DecodeException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/GifDecodeHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/BitmapDecodeResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/DecodeTimeAnalyze.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/ImageZoomFunction.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/DisplayListenerProxy.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/ViewFunctions.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/ProgressListenerProxy.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/OnClickListenerProxy.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/ViewFunction.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/FunctionPropertyView.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/RequestFunction.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/viewfun/FunctionCallbackView.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/http/ImageDownloader.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/http/HttpStack.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/http/HurlStack.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/http/RedirectsException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/http/DownloadException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/OptionsFilter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/PauseLoadOptionsFilter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/LowQualityOptionsFilter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/OptionsFilterManager.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/PauseDownloadOptionsFilter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/optionsfilter/InPreferQualityOverSpeedOptionsFilter.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/Size.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/AdaptiveTwoLevelScales.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/ScaleDragHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/ZoomScales.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/ImageZoomer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/BlockDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/Sizes.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/LocationRunner.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/BlockExecutor.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/ImageRegionDecoder.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/DecodeHandler.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/BlockManager.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/BlockDecoder.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/CallbackHandler.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/InitHandler.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/block/Block.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/FreeRideDownloadRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DownloadListener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/ImageFrom.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/LoadListener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DownloadRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/FreeRideDisplayRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/LoadHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/RequestLevel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DownloadResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DownloadProgressListener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/RequestFactory.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayHelper.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/FreeRideManager.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/ViewInfo.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/LoadResult.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/RedisplayListener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/ErrorCause.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/CanceledException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/Listener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayListener.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/CallbackHandler.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/CancelCause.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/BaseRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/HelperFactory.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/display/TransitionImageDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/UriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/GetDataSourceException.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AbsDiskCacheUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/ContentUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AndroidResUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/FileUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/HttpsUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/FileVariantUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AppIconUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/Base64VariantUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/ApkIconUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/Base64UriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AbsStreamDiskCacheUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/UriModelManager.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AssetUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/HttpUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/DrawableUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/uri/AbsBitmapDiskCacheUriModel.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/process/ResizeImageProcessor.java
+/*
+ * Copyright (C) 2019 Peng fei Pan <panpfpanpf@outlook.me>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/SketchView.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/SketchImageView.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/cache/MemoryCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/cache/LruMemoryCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/cache/DiskCache.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/decode/ImageDecoder.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/FixedSize.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DownloadOptions.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/RequestAndViewBinder.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/LoadOptions.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/LoadRequest.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/Resize.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/ShapeSize.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/RequestExecutor.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/DisplayOptions.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/request/MaxSize.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/display/ZoomOutImageDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/display/DefaultImageDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/display/ZoomInImageDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/display/ImageDisplayer.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/process/ImageProcessor.java
+/*
+ * Copyright (C) 2019 Peng fei Pan <panpfpanpf@outlook.me>
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Files: app/src/main/java/com/example/c001apk/compose/ui/component/icons/Swatch.kt
+/*
+ * ImageToolbox is an image editor for android
+ * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * You should have received a copy of the Apache License
+ * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
+ */
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/ScaleDragGestureDetector.java
+/* ******************************************************************************
+ * Copyright 2011, 2012 Chris Banes.
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ****************************************************************************** */
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/TapHelper.java
+/*******************************************************************************
+ * Copyright 2011, 2012 Chris Banes.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *******************************************************************************/
+
+Files: SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/ZoomRunner.java, SketchImageViewLoader/src/main/java/net/mikaelzero/mojito/view/sketch/core/zoom/FlingRunner.java
+/*******************************************************************************
+ * Copyright 2011, 2012 Chris Banes.
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *******************************************************************************/
+

@@ -16,3 +16,15 @@ local.properties
 *.log
 .idea
 .kotlin
+**/build/
+*.apk
+*.aab
+*.jks
+*.keystore
+*.hprof
+*.pcap
+*.pcapng
+*.pb
+signing.properties
+
+/dist/

@@ -64,6 +64,12 @@ fun LicenseScreen(
 
 private val licenseList = listOf(
     LicenseItem(
+        "bggRGjQaUbCoE / frisk1127 / contributors / tiancaiProgramer",
+        "c001apk-compose / Reply Fix",
+        "https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/blob/main/LICENSE",
+        LicenseType.AGPL3
+    ),
+    LicenseItem(
         "Google",
         "Jetpack Compose",
         "https://github.com/androidx/androidx",
@@ -133,7 +139,7 @@ private val licenseList = listOf(
         "jeremyh",
         "jBCrypt",
         "https://github.com/jeremyh/jBCrypt",
-        LicenseType.Apache2
+        LicenseType.ISC
     ),
     LicenseItem(
         "jhy",
@@ -177,7 +183,9 @@ data class LicenseItem(
 enum class LicenseType {
     Apache2,
     MIT,
-    GPL3
+    GPL3,
+    AGPL3,
+    ISC
 }
 
 private fun getLicense(type: LicenseType): String =
@@ -185,6 +193,8 @@ private fun getLicense(type: LicenseType): String =
         LicenseType.Apache2 -> "Apache Software License 2.0"
         LicenseType.MIT -> "MIT License"
         LicenseType.GPL3 -> "GNU general public license Version 3"
+        LicenseType.AGPL3 -> "GNU Affero General Public License Version 3"
+        LicenseType.ISC -> "ISC License"
     }
 
 @Composable

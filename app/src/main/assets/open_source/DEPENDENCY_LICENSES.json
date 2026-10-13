@@ -1,0 +1,3791 @@
+[
+  {
+    "group": "androidx.databinding",
+    "name": "viewbinding",
+    "version": "9.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.annotation",
+    "name": "annotation",
+    "version": "1.9.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/annotation#1.9.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.annotation",
+    "name": "annotation-jvm",
+    "version": "1.9.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/annotation#1.9.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib",
+    "version": "2.2.20",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains",
+    "name": "annotations",
+    "version": "23.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/JetBrains/java-annotations",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib-common",
+    "version": "2.2.20",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib-jdk8",
+    "version": "1.8.22",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib-jdk7",
+    "version": "1.8.22",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.activity",
+    "name": "activity-compose",
+    "version": "1.9.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/activity#1.9.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.activity",
+    "name": "activity-ktx",
+    "version": "1.9.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/activity#1.9.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.activity",
+    "name": "activity",
+    "version": "1.9.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/activity#1.9.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.collection",
+    "name": "collection",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/collection#1.5.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.collection",
+    "name": "collection-jvm",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/collection#1.5.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.collection",
+    "name": "collection-ktx",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/collection#1.5.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.core",
+    "name": "core",
+    "version": "1.13.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/core#1.13.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.annotation",
+    "name": "annotation-experimental",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/annotation#1.5.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.concurrent",
+    "name": "concurrent-futures",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/topic/libraries/architecture/index.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.guava",
+    "name": "listenablefuture",
+    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "official Maven Central parent POM"
+  },
+  {
+    "group": "androidx.interpolator",
+    "name": "interpolator",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-android",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.arch.core",
+    "name": "core-common",
+    "version": "2.2.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.arch.core",
+    "name": "core-runtime",
+    "version": "2.2.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-common",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-common-jvm",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-coroutines-core",
+    "version": "1.8.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-coroutines-core-jvm",
+    "version": "1.8.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-coroutines-bom",
+    "version": "1.8.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-coroutines-android",
+    "version": "1.8.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-livedata",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-livedata-core",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-livedata-core-ktx",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-livedata-ktx",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-compose",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-compose-android",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.runtime",
+    "name": "runtime",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.runtime",
+    "name": "runtime-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.runtime",
+    "name": "runtime-saveable",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.runtime",
+    "name": "runtime-saveable-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-ktx",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-ktx-android",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-process",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.startup",
+    "name": "startup-runtime",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/startup#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.tracing",
+    "name": "tracing",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/tracing#1.0.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel-android",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel-compose",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel-compose-android",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.autofill",
+    "name": "autofill",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-geometry",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-geometry-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-util",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-util-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-graphics",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-graphics-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-unit",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-unit-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-text",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-text-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.emoji2",
+    "name": "emoji2",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/emoji2#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.emoji2",
+    "name": "emoji2-views-helper",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/emoji2#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.animation",
+    "name": "animation",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-animation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.animation",
+    "name": "animation-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-animation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.animation",
+    "name": "animation-core",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-animation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.animation",
+    "name": "animation-core-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-animation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.foundation",
+    "name": "foundation-layout",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.foundation",
+    "name": "foundation-layout-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.foundation",
+    "name": "foundation",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.foundation",
+    "name": "foundation-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-ripple",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-ripple-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.savedstate",
+    "name": "savedstate",
+    "version": "1.2.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/savedstate#1.2.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.savedstate",
+    "name": "savedstate-ktx",
+    "version": "1.2.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/savedstate#1.2.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling-data",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling-data-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling-preview",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.ui",
+    "name": "ui-tooling-preview-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.graphics",
+    "name": "graphics-path",
+    "version": "1.0.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/graphics#1.0.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.customview",
+    "name": "customview-poolingcontainer",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/customview#1.0.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.core",
+    "name": "core-ktx",
+    "version": "1.13.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/core#1.13.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.profileinstaller",
+    "name": "profileinstaller",
+    "version": "1.3.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/profileinstaller#1.3.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel-savedstate",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-viewmodel-ktx",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-common-java8",
+    "version": "2.8.5",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.5",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.versionedparcelable",
+    "name": "versionedparcelable",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.appcompat",
+    "name": "appcompat",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/appcompat#1.7.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.appcompat",
+    "name": "appcompat-resources",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/appcompat#1.7.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.vectordrawable",
+    "name": "vectordrawable",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.vectordrawable",
+    "name": "vectordrawable-animated",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.cursoradapter",
+    "name": "cursoradapter",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.drawerlayout",
+    "name": "drawerlayout",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.customview",
+    "name": "customview",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.fragment",
+    "name": "fragment",
+    "version": "1.5.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/fragment#1.5.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.loader",
+    "name": "loader",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.viewpager",
+    "name": "viewpager",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.resourceinspection",
+    "name": "resourceinspection-annotation",
+    "version": "1.0.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/resourceinspection#1.0.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-icons-extended",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-icons-extended-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-icons-core",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material",
+    "name": "material-icons-core-android",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material#1.7.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.navigation",
+    "name": "navigation-compose",
+    "version": "2.8.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.navigation",
+    "name": "navigation-runtime-ktx",
+    "version": "2.8.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.navigation",
+    "name": "navigation-common-ktx",
+    "version": "2.8.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.navigation",
+    "name": "navigation-common",
+    "version": "2.8.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-serialization-core",
+    "version": "1.6.3",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-serialization-core-jvm",
+    "version": "1.6.3",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "name": "kotlinx-serialization-bom",
+    "version": "1.6.3",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.navigation",
+    "name": "navigation-runtime",
+    "version": "2.8.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout-compose",
+    "version": "1.1.0-beta01",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/constraintlayout#1.1.0-beta01",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout-compose-android",
+    "version": "1.1.0-beta01",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/constraintlayout#1.1.0-beta01",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout-core",
+    "version": "1.1.0-beta01",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/constraintlayout#1.1.0-beta01",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore-android",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore-core",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore-core-android",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-parcelize-runtime",
+    "version": "2.2.10",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-android-extensions-runtime",
+    "version": "2.2.10",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "Kotlin Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore-core-okio",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.datastore",
+    "name": "datastore-core-okio-jvm",
+    "version": "1.1.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/datastore#1.1.1",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.squareup.okio",
+    "name": "okio",
+    "version": "3.9.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/square/okio/",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.squareup.okio",
+    "name": "okio-jvm",
+    "version": "3.9.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/square/okio/",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.exifinterface",
+    "name": "exifinterface",
+    "version": "1.3.7",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/exifinterface#1.3.7",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.hilt",
+    "name": "hilt-navigation-compose",
+    "version": "1.2.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/hilt#1.2.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.hilt",
+    "name": "hilt-navigation",
+    "version": "1.2.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/hilt#1.2.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.dagger",
+    "name": "hilt-android",
+    "version": "2.59",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/dagger",
+    "developers": [
+      null
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.dagger",
+    "name": "dagger",
+    "version": "2.59",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/dagger",
+    "developers": [
+      null
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "jakarta.inject",
+    "name": "jakarta.inject-api",
+    "version": "2.0.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/eclipse-ee4j/injection-api",
+    "developers": [
+      "Antoine Sabot-Durand",
+      "Martin Kouba",
+      "Tomas Remes",
+      "Matej Novotny"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "javax.inject",
+    "name": "javax.inject",
+    "version": "1",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "original 1.0 source file license header"
+  },
+  {
+    "group": "org.jspecify",
+    "name": "jspecify",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://jspecify.org/",
+    "developers": [
+      "Kevin Bourrillion"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.dagger",
+    "name": "dagger-lint-aar",
+    "version": "2.59",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/dagger",
+    "developers": [
+      null
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.dagger",
+    "name": "hilt-core",
+    "version": "2.59",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/dagger",
+    "developers": [
+      null
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.code.findbugs",
+    "name": "jsr305",
+    "version": "3.0.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://findbugs.sourceforge.net/",
+    "developers": [],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3",
+    "name": "material3",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3",
+    "name": "material3-android",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3",
+    "name": "material3-adaptive-navigation-suite",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3",
+    "name": "material3-adaptive-navigation-suite-android",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3.adaptive",
+    "name": "adaptive",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive#1.0.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3.adaptive",
+    "name": "adaptive-android",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive#1.0.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.window",
+    "name": "window",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/window#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.window.extensions.core",
+    "name": "core",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/window-extensions-core#1.0.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.window",
+    "name": "window-core",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/window#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.window",
+    "name": "window-core-android",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/window#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose.material3",
+    "name": "material3-window-size-class-android",
+    "version": "1.3.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/compose-material3#1.3.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.room",
+    "name": "room-ktx",
+    "version": "2.8.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/room#2.8.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.room",
+    "name": "room-common",
+    "version": "2.8.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/room#2.8.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.room",
+    "name": "room-common-jvm",
+    "version": "2.8.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/room#2.8.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.room",
+    "name": "room-runtime",
+    "version": "2.8.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/room#2.8.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.room",
+    "name": "room-runtime-android",
+    "version": "2.8.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/room#2.8.4",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.sqlite",
+    "name": "sqlite",
+    "version": "2.6.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.sqlite",
+    "name": "sqlite-android",
+    "version": "2.6.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.sqlite",
+    "name": "sqlite-framework",
+    "version": "2.6.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.sqlite",
+    "name": "sqlite-framework-android",
+    "version": "2.6.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.compose",
+    "name": "compose-bom",
+    "version": "2024.09.01",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack",
+    "developers": [],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.webkit",
+    "name": "webkit",
+    "version": "1.11.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/webkit#1.11.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.accompanist",
+    "name": "accompanist-drawablepainter",
+    "version": "0.36.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/accompanist/",
+    "developers": [
+      "Google"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.android.material",
+    "name": "material",
+    "version": "1.12.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/material-components/material-components-android",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-bom",
+    "version": "1.8.22",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://kotlinlang.org/",
+    "developers": [
+      "JetBrains Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.errorprone",
+    "name": "error_prone_annotations",
+    "version": "2.15.0",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.cardview",
+    "name": "cardview",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.coordinatorlayout",
+    "name": "coordinatorlayout",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout",
+    "version": "2.0.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://tools.android.com",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout-solver",
+    "version": "2.0.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://tools.android.com",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.dynamicanimation",
+    "name": "dynamicanimation",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.legacy",
+    "name": "legacy-support-core-utils",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.documentfile",
+    "name": "documentfile",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.localbroadcastmanager",
+    "name": "localbroadcastmanager",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.print",
+    "name": "print",
+    "version": "1.0.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "http://developer.android.com/tools/extras/support-library.html",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.recyclerview",
+    "name": "recyclerview",
+    "version": "1.3.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/recyclerview#1.3.2",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.viewpager2",
+    "name": "viewpager2",
+    "version": "1.1.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/viewpager2#1.1.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.transition",
+    "name": "transition",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://developer.android.com/jetpack/androidx/releases/transition#1.5.0",
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.protobuf",
+    "name": "protobuf-kotlin-lite",
+    "version": "4.28.1",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "official Maven Central parent POM"
+  },
+  {
+    "group": "com.google.protobuf",
+    "name": "protobuf-javalite",
+    "version": "4.28.1",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "official Maven Central parent POM"
+  },
+  {
+    "group": "com.squareup.okhttp3",
+    "name": "logging-interceptor",
+    "version": "4.12.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://square.github.io/okhttp/",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.squareup.okhttp3",
+    "name": "okhttp",
+    "version": "4.12.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://square.github.io/okhttp/",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.squareup.retrofit2",
+    "name": "retrofit",
+    "version": "2.11.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/square/retrofit",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.squareup.retrofit2",
+    "name": "converter-gson",
+    "version": "2.11.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/square/retrofit",
+    "developers": [
+      "Square, Inc."
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.code.gson",
+    "name": "gson",
+    "version": "2.10.1",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil-compose",
+    "version": "2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil-compose-base",
+    "version": "2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil-base",
+    "version": "2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil",
+    "version": "2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil-gif",
+    "version": "2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "jp.wasabeef.transformers",
+    "name": "coil",
+    "version": "1.0.6",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com//wasabeef/transformers",
+    "developers": [
+      "Daichi Furiya"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "jp.wasabeef.transformers",
+    "name": "types",
+    "version": "1.0.6",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com//wasabeef/transformers",
+    "developers": [
+      "Daichi Furiya"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "jp.wasabeef.transformers",
+    "name": "core",
+    "version": "1.0.6",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com//wasabeef/transformers",
+    "developers": [
+      "Daichi Furiya"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "me.zhanghai.android.appiconloader",
+    "name": "appiconloader-coil",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/zhanghai/AppIconLoader",
+    "developers": [
+      "Hai Zhang"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "me.zhanghai.android.appiconloader",
+    "name": "appiconloader",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/zhanghai/AppIconLoader",
+    "developers": [
+      "Hai Zhang"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "me.zhanghai.android.appiconloader",
+    "name": "appiconloader-iconloaderlib",
+    "version": "1.5.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/zhanghai/AppIconLoader",
+    "developers": [
+      "Hai Zhang"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.mindrot",
+    "name": "jbcrypt",
+    "version": "0.4",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": "https://opensource.org/licenses/isc-license"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/djmdjm/jBCrypt",
+    "developers": [
+      "Damien Miller"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jsoup",
+    "name": "jsoup",
+    "version": "1.18.1",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://jsoup.org/license"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://jsoup.org/",
+    "developers": [
+      "Jonathan Hedley"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "me.onebone",
+    "name": "toolbar-compose",
+    "version": "2.3.5",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/onebone/compose-collapsing-toolbar",
+    "developers": [
+      "onebone"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.aliyun.dpa",
+    "name": "oss-android-sdk",
+    "version": "2.9.19",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/aliyun/aliyun-oss-android-sdk",
+    "developers": [
+      "Aliyun SDK"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.materialkolor",
+    "name": "material-kolor",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://github.com/jordond/materialkolor/blob/master/LICENSE"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/jordond/materialkolor",
+    "developers": [
+      "Jordon de Hoog"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.materialkolor",
+    "name": "material-kolor-android",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://github.com/jordond/materialkolor/blob/master/LICENSE"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/jordond/materialkolor",
+    "developers": [
+      "Jordon de Hoog"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.materialkolor",
+    "name": "material-color-utilities",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://github.com/jordond/materialkolor/blob/master/LICENSE"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/jordond/materialkolor",
+    "developers": [
+      "Jordon de Hoog"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.materialkolor",
+    "name": "material-color-utilities-android",
+    "version": "1.7.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://github.com/jordond/materialkolor/blob/master/LICENSE"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/jordond/materialkolor",
+    "developers": [
+      "Jordon de Hoog"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "dev.drewhamilton.poko",
+    "name": "poko-annotations",
+    "version": "0.16.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/drewhamilton/Poko",
+    "developers": [
+      "Drew Hamilton"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "dev.drewhamilton.poko",
+    "name": "poko-annotations-jvm",
+    "version": "0.16.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/drewhamilton/Poko",
+    "developers": [
+      "Drew Hamilton"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.compose.material3",
+    "name": "material3",
+    "version": "1.6.11",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/JetBrains/compose-jb",
+    "developers": [
+      "Compose Multiplatform Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.compose.runtime",
+    "name": "runtime",
+    "version": "1.6.11",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/JetBrains/compose-jb",
+    "developers": [
+      "Compose Multiplatform Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "org.jetbrains.compose.ui",
+    "name": "ui",
+    "version": "1.6.11",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/JetBrains/compose-jb",
+    "developers": [
+      "Compose Multiplatform Team"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath",
+    "version": "3.5.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/ajalt/colormath/",
+    "developers": [
+      "AJ Alt"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath-jvm",
+    "version": "3.5.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/ajalt/colormath/",
+    "developers": [
+      "AJ Alt"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.geyifeng.immersionbar",
+    "name": "immersionbar",
+    "version": "3.2.2",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/gyf-dev/ImmersionBar",
+    "developers": [
+      "gyf-dev"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "io.github.panpf.sketch",
+    "name": "sketch-gif",
+    "version": "2.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/panpf/sketch",
+    "developers": [
+      "panpf"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "pl.droidsonroids",
+    "name": "relinker",
+    "version": "1.3.1",
+    "licenses": [
+      {
+        "name": "Apache-v2",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/koral--/ReLinker",
+    "developers": [
+      "KeepSafe"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-exoplayer",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-common",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.google.guava",
+    "name": "guava",
+    "version": "33.3.1-android",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/google/guava",
+    "developers": [],
+    "license_basis": "official Maven Central parent POM"
+  },
+  {
+    "group": "com.google.guava",
+    "name": "failureaccess",
+    "version": "1.0.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [],
+    "license_basis": "official Maven Central parent POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-container",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-database",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-datasource",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-decoder",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "androidx.media3",
+    "name": "media3-extractor",
+    "version": "1.7.1",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": null,
+    "developers": [
+      "The Android Open Source Project"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.github.MikaelZero.mojito",
+    "name": "coilimageloader",
+    "version": "1.8.7",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://github.com/mikaelzero/mojito/blob/master/LICENSE"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/mikaelzero/mojito",
+    "developers": [
+      "mikaelzero"
+    ],
+    "license_basis": "original project LICENSE, retained copy"
+  },
+  {
+    "group": "io.coil-kt",
+    "name": "coil-svg",
+    "version": "2.1.0",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/coil-kt/coil",
+    "developers": [
+      "Coil Contributors"
+    ],
+    "license_basis": "cached resolved module POM"
+  },
+  {
+    "group": "com.caverock",
+    "name": "androidsvg-aar",
+    "version": "1.4",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "pom_cached": true,
+    "project_url": "https://github.com/BigBadaboom/androidsvg",
+    "developers": [
+      "Paul LeBeau"
+    ],
+    "license_basis": "cached resolved module POM"
+  }
+]

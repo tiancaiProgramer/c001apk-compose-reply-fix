@@ -41,7 +41,7 @@ object Constants {
     const val WEB_LOGIN_FAILED = "网页登录失败"
     const val URL_LOGIN = "https://account.coolapk.com/auth/login?type=mobile"
     const val URL_SOURCE_CODE = "https://github.com/bggRGjQaUbCoE/c001apk-compose"
-    const val URL_SOURCE_CODE_FORK = "https://github.com/frisk1127/c001apk-compose"
+    const val URL_SOURCE_CODE_FORK = "https://github.com/tiancaiProgramer/c001apk-compose-reply-fix"
 
     val entityTypeList =
         listOf(

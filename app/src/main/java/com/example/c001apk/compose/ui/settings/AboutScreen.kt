@@ -87,7 +87,7 @@ fun AboutScreen(
             BasicListItem(
                 leadingImageVector = Icons.Outlined.AllInclusive,
                 headlineText = stringResource(id = R.string.app_name),
-                supportingText = "c001apk Revived"
+                supportingText = "评论修复维护：tiancaiProgramer\nAGPL-3.0；按现状提供，不提供担保。"
             ) { }
             BasicListItem(
                 leadingImageVector = Icons.Default.ErrorOutline,
@@ -100,6 +100,13 @@ fun AboutScreen(
                 supportingText = URL_SOURCE_CODE
             ) {
                 context.openInBrowser(URL_SOURCE_CODE)
+            }
+            BasicListItem(
+                leadingImageVector = Icons.Outlined.ForkRight,
+                headlineText = "维护版来源：frisk1127",
+                supportingText = "https://github.com/frisk1127/c001apk-compose"
+            ) {
+                context.openInBrowser("https://github.com/frisk1127/c001apk-compose")
             }
             BasicListItem(
                 leadingImageVector = Icons.Outlined.ForkRight,

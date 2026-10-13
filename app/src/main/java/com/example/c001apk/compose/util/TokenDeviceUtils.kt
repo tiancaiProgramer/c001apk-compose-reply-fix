@@ -13,13 +13,13 @@ import java.util.Random
 
 object TokenDeviceUtils {
 
-    fun withFirstComponent(encodedDevice: String, firstComponentBase64: String): String {
-        if (firstComponentBase64.isEmpty()) return encodedDevice
+    // Modified 2026-10-13 by tiancaiProgramer: read each user's identifier at runtime.
+    fun withFirstComponent(encodedDevice: String, firstComponent: String): String {
+        if (firstComponent.isEmpty() || encodedDevice.isEmpty()) return encodedDevice
         val decoded = String(Base64.decode(encodedDevice.reversed(), Base64.DEFAULT), StandardCharsets.UTF_8)
         require(decoded.count { it == ';' } == 8) { "Expected nine Device components" }
-        val first = String(Base64.decode(firstComponentBase64, Base64.DEFAULT), StandardCharsets.UTF_8)
-        require(first.isNotEmpty() && !first.contains(';')) { "Invalid first Device component" }
-        return encode(first + decoded.substring(decoded.indexOf(';')))
+        require(firstComponent.none { it == ';' || it == '\r' || it == '\n' }) { "Invalid first Device component" }
+        return encode(firstComponent + decoded.substring(decoded.indexOf(';')))
     }
 
     fun encode(deviceInfo: String): String {

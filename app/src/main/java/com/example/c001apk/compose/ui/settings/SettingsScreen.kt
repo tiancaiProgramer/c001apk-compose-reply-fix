@@ -97,8 +97,6 @@ import com.example.c001apk.compose.ui.component.settings.StateDropdownListItem
 import com.example.c001apk.compose.ui.component.settings.SwitchListItem
 import com.example.c001apk.compose.util.CacheDataManager.clearAllCache
 import com.example.c001apk.compose.util.CacheDataManager.getTotalCacheSize
-import com.example.c001apk.compose.util.TokenDeviceUtils.encode
-import com.example.c001apk.compose.util.Utils.randomMacAddress
 import com.example.c001apk.compose.util.openInBrowser
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import com.materialkolor.PaletteStyle
@@ -190,7 +188,7 @@ fun SettingsScreen(
             BasicListItem(
                 leadingImageVector = Icons.Outlined.Smartphone,
                 headlineText = "数字联盟ID",
-                supportingText = prefs.szlmId.ifEmpty { null }
+                supportingText = if (prefs.szlmId.isEmpty()) "请配置本人有效 ID；本版本不自动获取" else "已配置本人 ID"
             ) {
                 showSZLMIDDialog = true
             }
@@ -459,14 +457,13 @@ fun SettingsScreen(
                 EditTextDialog(
                     data = prefs.szlmId,
                     title = "数字联盟 ID",
+                    hint = "填写本人有效 ID；请勿使用他人的值",
+                    isValid = { value -> value.none { it == ';' || it == '\r' || it == '\n' } },
                     onDismiss = {
                         showSZLMIDDialog = false
                     },
                     setData = {
-                        viewModel.setSZLMId(it)
-                        viewModel.setXAppDevice(
-                            encode("$it; ; ; ${randomMacAddress()}; ${prefs.manufacturer}; ${prefs.brand}; ${prefs.model}; ${prefs.buildNumber}; null")
-                        )
+                        viewModel.setSZLMId(it.trim())
                     }
                 )
             }
@@ -638,6 +635,7 @@ fun EditTextDialog(
     setData: (String) -> Unit,
     hint: String? = null,
     maxLength: Int? = null,
+    isValid: (String) -> Boolean = { true },
 ) {
     var text by remember {
         mutableStateOf(
@@ -667,6 +665,7 @@ fun EditTextDialog(
         },
         confirmButton = {
             TextButton(
+                enabled = isValid(text.text),
                 onClick = {
                     onDismiss()
                     setData(text.text)

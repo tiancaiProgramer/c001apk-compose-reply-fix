@@ -1,6 +1,5 @@
 package com.example.c001apk.compose.util
 
-import com.example.c001apk.compose.BuildConfig
 import com.example.c001apk.compose.constant.Constants.APP_ID
 import com.example.c001apk.compose.constant.Constants.CHANNEL
 import com.example.c001apk.compose.constant.Constants.DARK_MODE
@@ -26,7 +25,7 @@ object AddCookiesInterceptor : Interceptor {
         val isReply = request.method == "POST" && request.url.host == "api.coolapk.com" &&
                 request.url.encodedPath == "/v6/feed/reply"
         val deviceCode = if (isReply) {
-            TokenDeviceUtils.withFirstComponent(CookieUtil.xAppDevice, BuildConfig.REPLY_FIRST_COMPONENT_BASE64)
+            TokenDeviceUtils.withFirstComponent(CookieUtil.xAppDevice, CookieUtil.szlmId)
         } else CookieUtil.xAppDevice
         val token = deviceCode.getTokenV2()
         builder.apply {
