@@ -13,6 +13,15 @@ import java.util.Random
 
 object TokenDeviceUtils {
 
+    fun withFirstComponent(encodedDevice: String, firstComponentBase64: String): String {
+        if (firstComponentBase64.isEmpty()) return encodedDevice
+        val decoded = String(Base64.decode(encodedDevice.reversed(), Base64.DEFAULT), StandardCharsets.UTF_8)
+        require(decoded.count { it == ';' } == 8) { "Expected nine Device components" }
+        val first = String(Base64.decode(firstComponentBase64, Base64.DEFAULT), StandardCharsets.UTF_8)
+        require(first.isNotEmpty() && !first.contains(';')) { "Invalid first Device component" }
+        return encode(first + decoded.substring(decoded.indexOf(';')))
+    }
+
     fun encode(deviceInfo: String): String {
         val charset: Charset = StandardCharsets.UTF_8
         val bytes = deviceInfo.toByteArray(charset)

@@ -19,17 +19,22 @@ val gitCommitHash = providers.exec {
     commandLine("git", "rev-parse", "--verify", "--short", "HEAD")
 }.standardOutput.asText.map { it.trim() }.get()
 
+// Private experimental input; no captured identifier is stored in source control.
+val replyFirstComponentBase64 = providers.gradleProperty("replyFirstComponentBase64").orElse("").get()
+require(replyFirstComponentBase64.matches(Regex("[A-Za-z0-9+/=]*")))
+
 android {
     namespace = "com.example.c001apk.compose"
     compileSdk = 35
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "com.example.c001apk.timefix"
+        applicationId = "com.example.c001apk.timefirst"
         minSdk = 24
         targetSdk = 35
         versionCode = gitCommitCount
         versionName = gitCommitHash
+        buildConfigField("String", "REPLY_FIRST_COMPONENT_BASE64", "\"$replyFirstComponentBase64\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
