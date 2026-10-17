@@ -103,7 +103,7 @@ fun MainNavigation(
     val context = LocalContext.current
     var initialPage = 0
     var selectIndex by rememberSaveable { mutableIntStateOf(0) }
-    val isCompat by lazy { widthSizeClass == WindowWidthSizeClass.Compact }
+    val isCompat = widthSizeClass == WindowWidthSizeClass.Compact
     var compatId by remember { mutableStateOf<String?>(null) }
     var compatReply by remember { mutableStateOf<Boolean?>(null) }
 

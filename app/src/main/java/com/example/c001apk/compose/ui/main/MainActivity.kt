@@ -1,6 +1,7 @@
 package com.example.c001apk.compose.ui.main
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -16,6 +17,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
@@ -106,7 +108,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             navController = rememberNavController()
 
-            val widthSizeClass = calculateWindowSizeClass(this).widthSizeClass
+            val widthSizeClass = mainLayoutWidthSizeClass(
+                windowWidthSizeClass = calculateWindowSizeClass(this).widthSizeClass,
+                isLandscape = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE,
+            )
 
             val userPreferences by userPreferencesRepository.data
                 .collectAsStateWithLifecycle(
