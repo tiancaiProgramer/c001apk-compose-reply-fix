@@ -1,6 +1,6 @@
 param(
-    [string]$VersionName = '0.1.3-rc.4',
-    [int]$VersionCode = 259,
+    [string]$VersionName = '0.1.4',
+    [int]$VersionCode = 260,
     [string]$TestApplicationId = ''
 )
 

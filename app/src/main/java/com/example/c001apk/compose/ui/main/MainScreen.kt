@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.Icon
+import androidx.compose.material3.NavigationRailDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteType
@@ -23,7 +24,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import com.example.c001apk.compose.logic.model.UpdateCheckItem
 import com.example.c001apk.compose.ui.component.SlideTransition
@@ -74,11 +78,29 @@ fun MainScreen(
         WindowWidthSizeClass.Compact -> NavigationSuiteType.NavigationBar
         else -> NavigationSuiteType.NavigationRail
     }
+    val density = LocalDensity.current
+    val layoutDirection = LocalLayoutDirection.current
+    val railInsets = NavigationRailDefaults.windowInsets
+    // Use an approximately 85.3dp center distance between rail items.
+    // Material 3 1.3 already supplies 56dp items with a 4dp gap.
+    val railSpacingIncrease = (80.dp * 4 / 3) * 4 / 5 - (56.dp + 4.dp)
+    // Double the original top margin, then lower the group another 16dp.
+    val railTopOffset = with(density) { railInsets.getTop(density).toDp() } + 4.dp + 16.dp
+    val railStartOffset = with(density) {
+        (if (layoutDirection == LayoutDirection.Ltr) railInsets.getLeft(density, layoutDirection)
+        else railInsets.getRight(density, layoutDirection)).toDp()
+    } + 12.dp
 
     NavigationSuiteScaffold(
         navigationSuiteItems = {
             screens.forEachIndexed { index, screen ->
                 item(
+                    modifier = if (customNavSuiteType == NavigationSuiteType.NavigationRail) {
+                        Modifier.padding(
+                            start = railStartOffset,
+                            top = if (index == 0) railTopOffset else railSpacingIncrease,
+                        )
+                    } else Modifier,
                     icon = {
                         BadgedBox(
                             badge = {
