@@ -37,7 +37,7 @@ internal data class ReleaseVersion(val numbers: List<Long>, val preview: List<St
 data class GithubRelease(val tag: String, val notes: String, val pageUrl: String, val apkUrl: String)
 
 internal object GithubReleases {
-    const val REPOSITORY = "tiancaiProgramer/c001apk-compose-reply-fix"
+    const val REPOSITORY = "tiancaiProgramer/c002apk"
     const val PAGE_URL = "https://github.com/$REPOSITORY/releases"
     const val API_URL = "https://api.github.com/repos/$REPOSITORY/releases?per_page=30"
 

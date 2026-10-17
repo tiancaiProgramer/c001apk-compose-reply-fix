@@ -23,7 +23,7 @@
 
 ### GitHub 版本更新提醒
 
-从 `0.1.3-rc.1` 起，c002apk 检查本维护者仓库 [GitHub Releases](https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/releases)，识别已发布的正式版和预览版，按版本号选择高于当前安装版且附有正式 APK 的版本。
+从 `0.1.3-rc.1` 起，c002apk 检查本维护者仓库 [GitHub Releases](https://github.com/tiancaiProgramer/c002apk/releases)，识别已发布的正式版和预览版，按版本号选择高于当前安装版且附有正式 APK 的版本。
 
 - 启动时自动检查，成功检查后 6 小时内不重复请求；联网后台任务约每日检查一次。
 - 新版本弹窗显示更新说明，可直接打开对应 APK 下载链接或发布详情；后台通知每个版本提醒一次。
@@ -33,7 +33,7 @@
 
 现有“检查已安装应用更新”仍用于手机里的应用，与 c002apk 自身更新入口分开。发布规范和测试方式见 [GitHub 更新说明](docs/GITHUB_UPDATES.md)。
 
-最新版本 [0.1.2-rc.2](https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/releases/tag/v0.1.2-rc.2) 将桌面、设置及关于页的应用名统一为 **c002apk**，沿用原包名和原签名，可覆盖此前 Reply Fix 安装版并保留数据。
+最新合并版本 [0.1.3-rc.1](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.1) 包含评论列表修复、**c002apk** 更名及 GitHub 更新提醒，沿用原包名和原签名，可覆盖此前 Reply Fix 安装版并保留数据。2026-10-17 的两个中间 Release 已合并到此版；源码提交与旧标签保留。
 
 ### 评论列表兼容更新（2026-10-17）
 
@@ -41,7 +41,7 @@
 
 已安装版本可暂时在“设置 → 机型参数”将**版本名**设为 `16.6.4`、**版本号**设为 `2609291`、**API 版本**设为 `16`，保存后重启。本机已验证默认、最新、热门及楼中楼恢复读取；无须清除数据或重新填写本人 ID。此手动操作会更新该应用的全局请求版本参数；源码兼容修复仅作用于评论读取。
 
-修复包 `0.1.2-rc.1` 沿用原包名和原发布签名，已在小米 15 覆盖安装，并恢复旧参数验证默认、最新、热门及楼中楼均可读取；无需手动修改上述设置。APK 约 6.06 MB，应用和媒体模块共 20 项单元测试通过。下载见 [0.1.2-rc.1 发布页](https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/releases/tag/v0.1.2-rc.1)，详细记录见 [评论列表兼容验证](docs/COMMENT_API_VALIDATION.md)。
+评论修复已在小米 15 覆盖安装，并恢复旧参数验证默认、最新、热门及楼中楼均可读取；无需手动修改上述设置。现已合并进 [0.1.3-rc.1](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.1)，详细测试记录见 [评论列表兼容验证](docs/COMMENT_API_VALIDATION.md)。
 
 ### 评论发送配置
 

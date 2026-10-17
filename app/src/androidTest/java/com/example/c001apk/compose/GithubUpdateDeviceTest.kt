@@ -31,8 +31,10 @@ class GithubUpdateDeviceTest {
         }
         SelfUpdateRepository.schedule(context)
         assertTrue(SelfUpdateRepository.notificationsEnabled(context))
-        val release = requireNotNull(SelfUpdateRepository.check(context))
-        assertTrue(release.apkUrl.startsWith("https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/releases/download/"))
+        val release = requireNotNull(SelfUpdateRepository.check(context)) {
+            "Expected published update for ${BuildConfig.VERSION_NAME}"
+        }
+        assertTrue(release.apkUrl.startsWith("https://github.com/tiancaiProgramer/c002apk/releases/download/"))
         val manager = context.getSystemService(NotificationManager::class.java)
         manager.cancelAll()
         SelfUpdateRepository.notifyIfNew(context, release)

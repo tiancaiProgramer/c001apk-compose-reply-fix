@@ -4,7 +4,7 @@
 
 ## 用户使用
 
-更新来源固定为 `tiancaiProgramer/c001apk-compose-reply-fix` 的公开 Releases，无需登录 GitHub。包含已公开的预览版，不检测草稿或只有 tag 的提交。
+更新来源固定为 `tiancaiProgramer/c002apk` 的公开 Releases，无需登录 GitHub。包含已公开的预览版，不检测草稿或只有 tag 的提交。
 
 启动时自动检查（成功后间隔至少 6 小时），后台通过 Android JobScheduler 联网时约每 24 小时检查。后台通知同版本只发一次；打开通知可查看发布详情。系统省电、网络和强行停止会影响后台执行时间，不保证发布后即时通知。
 
