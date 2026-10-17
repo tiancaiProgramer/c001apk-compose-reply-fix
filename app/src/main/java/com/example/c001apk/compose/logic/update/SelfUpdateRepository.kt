@@ -32,6 +32,8 @@ object SelfUpdateRepository {
     private fun preferences(context: Context) = context.getSharedPreferences("github_app_updates", Context.MODE_PRIVATE)
 
     suspend fun check(context: Context, automatic: Boolean = false): GithubRelease? = withContext(Dispatchers.IO) {
+        // Recover the periodic job if the system removed it during an app stop or upgrade.
+        schedule(context)
         val prefs = preferences(context)
         val now = System.currentTimeMillis()
         val elapsed = now - prefs.getLong("last_foreground_check", 0)
