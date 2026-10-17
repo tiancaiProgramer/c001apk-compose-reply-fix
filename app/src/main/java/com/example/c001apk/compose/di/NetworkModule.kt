@@ -118,7 +118,11 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .addInterceptor(AddCookiesInterceptor)
             .addInterceptor(
-                HttpLoggingInterceptor().setLevel(
+                HttpLoggingInterceptor().apply {
+                    redactHeader("Cookie")
+                    redactHeader("X-App-Token")
+                    redactHeader("X-App-Device")
+                }.setLevel(
                     if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
                     else HttpLoggingInterceptor.Level.NONE
                 )
@@ -134,7 +138,11 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .addInterceptor(AddCookiesInterceptor)
             .addInterceptor(
-                HttpLoggingInterceptor().setLevel(
+                HttpLoggingInterceptor().apply {
+                    redactHeader("Cookie")
+                    redactHeader("X-App-Token")
+                    redactHeader("X-App-Device")
+                }.setLevel(
                     if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
                     else HttpLoggingInterceptor.Level.NONE
                 )
@@ -150,7 +158,11 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .addInterceptor(LoginCookiesInterceptor)
             .addInterceptor(
-                HttpLoggingInterceptor().setLevel(
+                HttpLoggingInterceptor().apply {
+                    redactHeader("Cookie")
+                    redactHeader("X-App-Token")
+                    redactHeader("X-App-Device")
+                }.setLevel(
                     if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
                     else HttpLoggingInterceptor.Level.NONE
                 )

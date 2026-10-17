@@ -51,6 +51,6 @@ object AddCookiesInterceptor : Interceptor {
                 )
             else addHeader("Cookie", SESSID)
         }
-        return chain.proceed(CommentApiCompat.applyTo(builder.build()))
+        return chain.proceed(CommentCaptcha.applyTo(CommentApiCompat.applyTo(builder.build())))
     }
 }

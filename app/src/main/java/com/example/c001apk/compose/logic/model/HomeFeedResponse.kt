@@ -7,10 +7,12 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 data class HomeFeedResponse(
+    @SerializedName(value = "status", alternate = ["code"])
     val status: Int?,
     val error: Int?,
     val message: String?,
-    val messageStatus: Int?,
+    val messageStatus: String?,
+    val messageExtra: com.google.gson.JsonElement?,
     val data: List<Data>?,
 ) {
 

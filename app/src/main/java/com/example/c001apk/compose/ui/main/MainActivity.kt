@@ -178,6 +178,7 @@ class MainActivity : ComponentActivity() {
                             widthSizeClass = widthSizeClass,
                         )
                         com.example.c001apk.compose.ui.selfupdate.StartupUpdateCheck()
+                        com.example.c001apk.compose.ui.component.CommentCaptchaDialog()
                     }
                 }
             }

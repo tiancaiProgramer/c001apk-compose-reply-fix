@@ -33,7 +33,9 @@
 
 现有“检查已安装应用更新”仍用于手机里的应用，与 c002apk 自身更新入口分开。发布规范和测试方式见 [GitHub 更新说明](docs/GITHUB_UPDATES.md)。
 
-最新合并版本 [0.1.3-rc.1](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.1) 包含评论列表修复、**c002apk** 更名及 GitHub 更新提醒，沿用原包名和原签名，可覆盖此前 Reply Fix 安装版并保留数据。2026-10-17 的两个中间 Release 已合并到此版；源码提交与旧标签保留。
+最新合并版本 [0.1.3-rc.2](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.2) 包含评论列表修复、新装设备人工验证码支持、**c002apk** 更名及 GitHub 更新提醒，沿用原包名和原签名，可覆盖此前 Reply Fix 安装版并保留数据。2026-10-17 只保留此合并版公开发布；源码提交与旧标签保留。
+
+新设备如遇 `err_request_captcha_v2`，会弹出“完成验证以查看评论”，请在手机上手动完成，成功后自动重试。已在新设备验证评论恢复；不会自动解验证码或绕过服务端验证。详见 [新装设备评论验证记录](docs/FRESH_INSTALL_COMMENTS.md)。
 
 ### 评论列表兼容更新（2026-10-17）
 
@@ -41,7 +43,7 @@
 
 已安装版本可暂时在“设置 → 机型参数”将**版本名**设为 `16.6.4`、**版本号**设为 `2609291`、**API 版本**设为 `16`，保存后重启。本机已验证默认、最新、热门及楼中楼恢复读取；无须清除数据或重新填写本人 ID。此手动操作会更新该应用的全局请求版本参数；源码兼容修复仅作用于评论读取。
 
-评论修复已在小米 15 覆盖安装，并恢复旧参数验证默认、最新、热门及楼中楼均可读取；无需手动修改上述设置。现已合并进 [0.1.3-rc.1](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.1)，详细测试记录见 [评论列表兼容验证](docs/COMMENT_API_VALIDATION.md)。
+评论修复已在小米 15 覆盖安装，并恢复旧参数验证默认、最新、热门及楼中楼均可读取；无需手动修改上述设置。现已合并进 [0.1.3-rc.2](https://github.com/tiancaiProgramer/c002apk/releases/tag/v0.1.3-rc.2)，详细测试记录见 [评论列表兼容验证](docs/COMMENT_API_VALIDATION.md)。
 
 ### 评论发送配置
 

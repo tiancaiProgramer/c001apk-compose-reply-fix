@@ -7,6 +7,8 @@ import com.example.c001apk.compose.di.Api1ServiceNoRedirect
 import com.example.c001apk.compose.di.Api2Service
 import com.example.c001apk.compose.logic.model.FeedContentResponse
 import com.example.c001apk.compose.logic.model.HomeFeedResponse
+import com.example.c001apk.compose.logic.model.CommentCaptchaChallenge
+import com.example.c001apk.compose.util.CommentCaptcha
 import com.example.c001apk.compose.logic.model.ProductConfigData
 import com.example.c001apk.compose.logic.network.ApiService
 import com.example.c001apk.compose.logic.state.LoadingState
@@ -64,7 +66,7 @@ class NetworkRepo @Inject constructor(
         feedType: String,
         blockStatus: Int,
         fromFeedAuthor: Int
-    ) = flowList {
+    ) = flowList(verifyCaptcha = true) {
         api2Service.getFeedContentReply(
             id,
             listType,
@@ -87,7 +89,7 @@ class NetworkRepo @Inject constructor(
         ).await()
     }
 
-    suspend fun getReply2Reply(id: String, page: Int, lastItem: String?) = flowList {
+    suspend fun getReply2Reply(id: String, page: Int, lastItem: String?) = flowList(verifyCaptcha = true) {
         apiService.getReply2Reply(id, page, lastItem).await()
     }
 
@@ -371,10 +373,18 @@ class NetworkRepo @Inject constructor(
         emit(result)
     }.flowOn(Dispatchers.IO)
 
-    private fun flowList(block: suspend () -> HomeFeedResponse) = flow {
+    private fun flowList(verifyCaptcha: Boolean = false, block: suspend () -> HomeFeedResponse) = flow {
         val result = try {
-            val response = block()
-            if (!response.message.isNullOrEmpty()) {
+            var response = block()
+            if (verifyCaptcha && response.messageStatus == "err_request_captcha_v2") {
+                val challenge = CommentCaptchaChallenge.from(response)
+                if (challenge != null) {
+                    if (CommentCaptcha.verify(challenge)) response = block()
+                }
+            }
+            if (response.messageStatus == "err_request_captcha_v2") {
+                LoadingState.Error("当前访问需要人机验证，验证未完成或未通过，请点击重试")
+            } else if (!response.message.isNullOrEmpty()) {
                 LoadingState.Error(mapServerMessage(response.message))
             } else if (!response.data.isNullOrEmpty()) {
                 LoadingState.Success(response.data)
@@ -384,6 +394,7 @@ class NetworkRepo @Inject constructor(
                 LoadingState.Error(LOADING_FAILED)
             }
         } catch (e: Exception) {
+            if (e is kotlinx.coroutines.CancellationException) throw e
             LoadingState.Error(mapErrorMessage(e))
         }
         emit(result)
