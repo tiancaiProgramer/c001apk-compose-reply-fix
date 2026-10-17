@@ -28,7 +28,7 @@ android {
         applicationId = providers.gradleProperty("testApplicationId")
             .orElse("com.example.c001apk.replyfix").get()
         manifestPlaceholders["applicationLabel"] =
-            if (providers.gradleProperty("testApplicationId").isPresent) "c001apk 独立测试"
+            if (providers.gradleProperty("testApplicationId").isPresent) "c002 独立测试"
             else "@string/app_name"
         minSdk = 24
         targetSdk = 35
@@ -115,7 +115,7 @@ android {
         outputs.configureEach {
             if (baseName == "release")
                 (this as? ApkVariantOutputImpl)?.outputFileName =
-                    "c001apk-compose_$versionName($versionCode).apk"
+                    "c002_$versionName($versionCode).apk"
         }
     }
 }

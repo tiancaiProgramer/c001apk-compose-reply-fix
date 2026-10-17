@@ -1,8 +1,8 @@
-# c001apk-compose Reply Fix · tiancaiProgramer 维护版
+# c002 · tiancaiProgramer 维护版
 
 **当前维护者：[tiancaiProgramer](https://github.com/tiancaiProgramer)**，负责本维护分支的后续开发、新增功能与问题修复。
 
-这是 c001apk-compose 的社区维护版。原项目来源、原作者及第三方组件信息集中记录在文末“来源与致谢”和 [AUTHORS.md](AUTHORS.md)。
+这是基于 c001apk-compose 的社区维护版，应用现名 **c002**。原项目来源、原作者及第三方组件信息集中记录在文末“来源与致谢”和 [AUTHORS.md](AUTHORS.md)。
 
 这是独立的非官方客户端修复版本，与酷安官方及上游作者无隶属或背书关系。包名 `com.example.c001apk.replyfix`，不会覆盖原版 `com.example.c001apk.compose`。
 
@@ -20,6 +20,8 @@
 - APK 和源码不内置测试者的 ID、Cookie、账号或设备参数。
 
 ## 当前状态与使用
+
+最新版本 [0.1.2-rc.2](https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/releases/tag/v0.1.2-rc.2) 将桌面、设置及关于页的应用名统一为 **c002**，沿用原包名和原签名，可覆盖此前 Reply Fix 安装版并保留数据。
 
 ### 评论列表兼容更新（2026-10-17）
 

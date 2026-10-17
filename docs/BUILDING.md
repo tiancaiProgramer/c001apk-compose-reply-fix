@@ -17,7 +17,7 @@ bash scripts/build-release.sh
 脚本默认构建开启 R8 和资源精简的签名 Release。不要在发布构建中传入 `-PdisableR8=true`；Debug 和无 R8 包仅供诊断，体积会显著增大。手动构建等价命令：
 
 ```sh
-bash gradlew :app:assembleRelease -PreleaseVersionName=0.1.2-rc.1 -PreleaseVersionCode=253
+bash gradlew :app:assembleRelease -PreleaseVersionName=0.1.2-rc.2 -PreleaseVersionCode=254
 ```
 
 Windows PowerShell 可执行：
@@ -36,7 +36,7 @@ Windows PowerShell 可执行：
 
 本仓库原发布证书 SHA-256：`f69971cc43c660b73436c539f85a5950a155d3e93dfcb181dc0fe84459a5f8ce`。原签名私钥由维护者私下保存；源码和发布附件不包含密钥或密码。
 
-图片与交易修复测试版可用以下命令构建为精简的独立 Release 包，应用名为“c001apk 独立测试”，不会替换 `com.example.c001apk.replyfix`：
+图片与交易修复测试版可用以下命令构建为精简的独立 Release 包，应用名为“c002 独立测试”，不会替换 `com.example.c001apk.replyfix`：
 
 ```sh
 ./gradlew :app:assembleRelease -PtestApplicationId=com.example.c001apk.replyfix.preview -PreleaseVersionName=0.1.1-rc.3-independent -PreleaseVersionCode=251

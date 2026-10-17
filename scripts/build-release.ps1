@@ -1,6 +1,6 @@
 param(
-    [string]$VersionName = '0.1.2-rc.1',
-    [int]$VersionCode = 253,
+    [string]$VersionName = '0.1.2-rc.2',
+    [int]$VersionCode = 254,
     [string]$TestApplicationId = ''
 )
 
@@ -20,7 +20,7 @@ try {
         throw 'Release APK exceeds 10 MiB. Check R8/resource shrinking and avoid debug or disableR8 builds.'
     }
     New-Item -ItemType Directory -Path 'dist' -Force | Out-Null
-    $target = Join-Path 'dist' "c001apk-reply-fix-$($element.versionName).apk"
+    $target = Join-Path 'dist' "c002-$($element.versionName).apk"
     Copy-Item -LiteralPath $apk.FullName -Destination $target
     $hash = (Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash.ToLowerInvariant()
     "$hash  $([IO.Path]::GetFileName($target))" | Set-Content -LiteralPath 'dist/SHA256SUMS' -Encoding utf8
