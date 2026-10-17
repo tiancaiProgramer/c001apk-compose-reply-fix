@@ -1,4 +1,4 @@
-# c002apk · tiancaiProgramer 维护版
+# c002apk
 
 **当前维护者：[tiancaiProgramer](https://github.com/tiancaiProgramer)**，负责本维护分支的后续开发、新增功能与问题修复。
 
