@@ -64,7 +64,7 @@ fun LicenseScreen(
 
 private val licenseList = listOf(
     LicenseItem(
-        "bggRGjQaUbCoE / frisk1127 / contributors / tiancaiProgramer",
+        "tiancaiProgramer（本分支维护） / bggRGjQaUbCoE / frisk1127 / contributors",
         "c001apk-compose / Reply Fix",
         "https://github.com/tiancaiProgramer/c001apk-compose-reply-fix/blob/main/LICENSE",
         LicenseType.AGPL3

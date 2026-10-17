@@ -1,5 +1,17 @@
 # 发布说明
 
+## 维护者署名
+
+本维护分支的后续开发、新增功能、问题修复与版本发布署名 **[tiancaiProgramer](https://github.com/tiancaiProgramer)**。README 与 Release 说明优先展示当前维护者和本次更新，原项目、上游版本及第三方组件集中放在文末“来源与致谢”。具体贡献以提交记录为准，保留原有文件头、版权和许可声明。
+
+Release 说明统一以以下内容开头：
+
+> **维护与新增功能：[tiancaiProgramer](https://github.com/tiancaiProgramer)**
+
+随后写本次更新、安装与验证范围，最后列来源与致谢。只调整展示说明时，不替换已发布 APK 或其对应源码、签名及校验附件；涉及应用内展示的源码改动随下次版本构建发布。
+
+## 仓库与附件
+
 建议仓库名：c001apk-compose-reply-fix。发布者账号须以本人 GitHub 主页确认；用户名本身不提供写入授权。
 
 优先在 GitHub 上 Fork frisk1127/c001apk-compose，保留 fork 来源关系；也可建立有明确作者归属和许可证的新公开仓库。不要覆盖已有不同内容的仓库或强制推送。

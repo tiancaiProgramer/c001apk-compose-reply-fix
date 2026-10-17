@@ -87,7 +87,7 @@ fun AboutScreen(
             BasicListItem(
                 leadingImageVector = Icons.Outlined.AllInclusive,
                 headlineText = stringResource(id = R.string.app_name),
-                supportingText = "评论修复维护：tiancaiProgramer\nAGPL-3.0；按现状提供，不提供担保。"
+                supportingText = "维护与新增功能：tiancaiProgramer\n负责本维护分支的后续开发与问题修复。"
             ) { }
             BasicListItem(
                 leadingImageVector = Icons.Default.ErrorOutline,
@@ -96,28 +96,29 @@ fun AboutScreen(
             ) { }
             BasicListItem(
                 leadingImageVector = Icons.Outlined.Code,
-                headlineText = "原项目地址",
-                supportingText = URL_SOURCE_CODE
+                headlineText = "本项目地址 · tiancaiProgramer",
+                supportingText = URL_SOURCE_CODE_FORK
             ) {
-                context.openInBrowser(URL_SOURCE_CODE)
+                context.openInBrowser(URL_SOURCE_CODE_FORK)
             }
             BasicListItem(
                 leadingImageVector = Icons.Outlined.ForkRight,
-                headlineText = "维护版来源：frisk1127",
+                headlineText = "上游来源：frisk1127",
                 supportingText = "https://github.com/frisk1127/c001apk-compose"
             ) {
                 context.openInBrowser("https://github.com/frisk1127/c001apk-compose")
             }
             BasicListItem(
                 leadingImageVector = Icons.Outlined.ForkRight,
-                headlineText = "本项目地址",
-                supportingText = URL_SOURCE_CODE_FORK
+                headlineText = "原项目与原作者：bggRGjQaUbCoE",
+                supportingText = URL_SOURCE_CODE
             ) {
-                context.openInBrowser(URL_SOURCE_CODE_FORK)
+                context.openInBrowser(URL_SOURCE_CODE)
             }
             BasicListItem(
                 leadingImageVector = Icons.Outlined.Source,
-                headlineText = "开源许可证"
+                headlineText = "开源许可证",
+                supportingText = "AGPL-3.0；原版权及第三方许可保留，按现状提供。"
             ) {
                 onLicenseClick()
             }

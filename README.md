@@ -1,10 +1,14 @@
-# c001apk-compose Reply Fix
+# c001apk-compose Reply Fix · tiancaiProgramer 维护版
 
-基于 [frisk1127/c001apk-compose](https://github.com/frisk1127/c001apk-compose) 的评论修复分支，原作者为 [bggRGjQaUbCoE](https://github.com/bggRGjQaUbCoE/c001apk-compose)。本分支维护账号：tiancaiProgramer。
+**当前维护者：[tiancaiProgramer](https://github.com/tiancaiProgramer)**，负责本维护分支的后续开发、新增功能与问题修复。
+
+这是 c001apk-compose 的社区维护版。原项目来源、原作者及第三方组件信息集中记录在文末“来源与致谢”和 [AUTHORS.md](AUTHORS.md)。
 
 这是独立的非官方客户端修复版本，与酷安官方及上游作者无隶属或背书关系。包名 `com.example.c001apk.replyfix`，不会覆盖原版 `com.example.c001apk.compose`。
 
 ## 修复内容
+
+维护与新增功能：**tiancaiProgramer**。
 
 - 0.1.1 增加图片缓存与显示修复：并发下载互不破坏缓存、复用缩略图缓存、按 EXIF 旋转后的真实尺寸显示、保留“查看原图”入口、改善 Live 图封面到视频的切换。
 - 二手交易商品频道使用双列商品卡片，显示封面、发布标题、价格、交易来源和地区；闲鱼标签可打开对应商品链接。话题讨论区保留动态列表。
@@ -33,17 +37,17 @@
 
 详见 [评论测试说明](docs/VALIDATION.md)、[图片与交易验证](docs/DEVICE_VALIDATION.md) 和 [体积分析](docs/SIZE_VALIDATION.md)。评论配置只验证过单一设备/账号组合，未验证跨设备普遍成功，也未完整确定服务端全部判定条件。
 
-## 作者与许可
-
-| 角色 | 作者 / 来源 |
-|---|---|
-| 原项目作者 | [bggRGjQaUbCoE](https://github.com/bggRGjQaUbCoE/c001apk-compose) |
-| 当前维护版来源 | [frisk1127](https://github.com/frisk1127/c001apk-compose) |
-| 此次修复与整理 | tiancaiProgramer，使用 AI 辅助修改与验证 |
-| 其他贡献者与第三方代码 | Git 提交历史、[AUTHORS.md](AUTHORS.md)、[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) |
-
-本衍生版本保留上游 **GNU AGPL version 3** 许可证，详见 [LICENSE](LICENSE)。第三方组件遵循各自许可证；原版权声明保留。本项目按现状提供，不提供担保。
-
 ## 构建与发布
 
 见 [构建说明](docs/BUILDING.md)、[发布说明](docs/PUBLISHING.md) 和 [改动记录](CHANGELOG.md)。每份 Release APK 必须同时提供对应 commit 的完整源码和构建说明。
+
+## 来源与致谢
+
+本维护分支的后续开发、新增功能与问题修复署名 **tiancaiProgramer**。上游项目及第三方组件的贡献归各自作者，原版权声明和 Git 历史保留。
+
+- 原项目与原作者：[bggRGjQaUbCoE/c001apk-compose](https://github.com/bggRGjQaUbCoE/c001apk-compose)。
+- 本分支直接来源：[frisk1127/c001apk-compose](https://github.com/frisk1127/c001apk-compose)，基础提交 `82ffea3c746955420c1d4f00380f5a6d7a6cad02`。
+- 完整作者与来源：[AUTHORS.md](AUTHORS.md)。
+- 第三方组件与许可：[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+本衍生版本保留上游 **GNU AGPL version 3** 许可证，详见 [LICENSE](LICENSE)。第三方组件遵循各自许可证；原版权声明保留。本项目按现状提供，不提供担保。

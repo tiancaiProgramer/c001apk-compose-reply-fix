@@ -1,12 +1,18 @@
 c001apk-compose Reply Fix
 
-Derived from bggRGjQaUbCoE/c001apk-compose and frisk1127/c001apk-compose.
-Upstream authors and contributors retain copyright in their contributions.
 Copyright (C) 2026 tiancaiProgramer for this fork's new modifications.
+Current maintainer: tiancaiProgramer. Responsible for ongoing development,
+new features, fixes and releases of this maintenance branch.
 
 Modified on 2026-10-13: integer-second Token timestamps, per-user runtime
 Device first-component configuration, corresponding settings synchronization,
-standalone packaging, source attribution and release documentation.
+standalone packaging, image previews and Live image transitions, secondhand
+product cards and links, optimized APK builds and release documentation.
+Modified on 2026-10-17: maintainer attribution and source acknowledgements.
+
+Sources and acknowledgements:
+Derived from bggRGjQaUbCoE/c001apk-compose and frisk1127/c001apk-compose.
+Upstream authors and contributors retain copyright in their contributions.
 
 This derivative is distributed under GNU Affero General Public License v3.
 No warranty is provided. Existing third-party notices remain applicable.
