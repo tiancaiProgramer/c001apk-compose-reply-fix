@@ -181,6 +181,10 @@ fun FeedScreen(
         }
 
     fun launchReply() {
+        if (!isLogin) {
+            context.makeToast(context.getString(R.string.reply_login_required))
+            return
+        }
         val intent = Intent(context, ReplyActivity::class.java)
         intent.putExtra("type", viewModel.replyType)
         intent.putExtra("rid", viewModel.replyId)
@@ -316,7 +320,7 @@ fun FeedScreen(
             )
         },
         floatingActionButton = {
-            if (isLogin && viewModel.feedState is LoadingState.Success) {
+            if (viewModel.feedState is LoadingState.Success) {
                 AnimatedVisibility(
                     modifier = if (!isCompat) Modifier.navigationBarsPadding() else Modifier,
                     visible = lazyListState.isScrollingUp(),
@@ -334,7 +338,7 @@ fun FeedScreen(
                     ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.Reply,
-                            contentDescription = null
+                            contentDescription = stringResource(R.string.reply_action)
                         )
                     }
                 }

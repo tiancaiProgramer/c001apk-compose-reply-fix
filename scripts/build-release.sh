@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-bash gradlew :app:assembleRelease -PreleaseVersionName="${RELEASE_VERSION_NAME:-0.1.3-rc.2}" -PreleaseVersionCode="${RELEASE_VERSION_CODE:-256}" "$@"
+bash gradlew :app:assembleRelease -PreleaseVersionName="${RELEASE_VERSION_NAME:-0.1.3-rc.3}" -PreleaseVersionCode="${RELEASE_VERSION_CODE:-258}" "$@"
 python3 - <<'PYBUILD'
 import json, pathlib, shutil, hashlib
 folder = pathlib.Path('app/build/outputs/apk/release')

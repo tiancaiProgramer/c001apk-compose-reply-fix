@@ -375,11 +375,12 @@ class NetworkRepo @Inject constructor(
 
     private fun flowList(verifyCaptcha: Boolean = false, block: suspend () -> HomeFeedResponse) = flow {
         val result = try {
+            val verificationAttempt = if (verifyCaptcha) CommentCaptcha.captureAttempt() else null
             var response = block()
             if (verifyCaptcha && response.messageStatus == "err_request_captcha_v2") {
                 val challenge = CommentCaptchaChallenge.from(response)
                 if (challenge != null) {
-                    if (CommentCaptcha.verify(challenge)) response = block()
+                    if (CommentCaptcha.verify(challenge, checkNotNull(verificationAttempt))) response = block()
                 }
             }
             if (response.messageStatus == "err_request_captcha_v2") {

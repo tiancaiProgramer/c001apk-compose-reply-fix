@@ -71,4 +71,6 @@
     <string name="sort_reply">最近回复</string>
     <string name="sort_hot">热度排序</string>
     <string name="sort_dateline">最新发布</string>
+    <string name="reply_action">回复</string>
+    <string name="reply_login_required">请先在“我的”页面登录酷安账号后再回复</string>
 </resources>

@@ -126,6 +126,10 @@ class UserPreferencesDataSource @Inject constructor(
         userPreferences.updateData { it.copy(isLogin = value) }
     }
 
+    suspend fun saveLogin(uid: String, username: String, token: String) = withContext(Dispatchers.IO) {
+        userPreferences.updateData { it.copy(uid = uid, username = username, token = token, isLogin = true) }
+    }
+
     suspend fun setUserAvatar(value: String) = withContext(Dispatchers.IO) {
         userPreferences.updateData { it.copy(userAvatar = value) }
     }

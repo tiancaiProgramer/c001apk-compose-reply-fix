@@ -17,12 +17,7 @@ class WebViewViewModel @Inject constructor(
 
     fun setIsLogin(uid: String, username: String, token: String) {
         viewModelScope.launch {
-            userPreferencesRepository.apply {
-                setUid(uid)
-                setUsername(username)
-                setToken(token)
-                setIsLogin(true)
-            }
+            userPreferencesRepository.saveLogin(uid, username, token)
         }
     }
 

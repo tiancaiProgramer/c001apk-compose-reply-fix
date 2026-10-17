@@ -6,6 +6,7 @@ import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withTimeout
 import okhttp3.Request
 import org.junit.After
 import org.junit.Assert.*
@@ -75,5 +76,53 @@ class CommentCaptchaTest {
         CommentCaptcha.complete(challenge, "human-result")
         changed.join()
         assertSame(original, CommentCaptcha.applyTo(original))
+    }
+
+    @Test fun concurrentChallengesShareOneHumanVerification() = runBlocking {
+        withTimeout(2000) {
+            val attempt = CommentCaptcha.captureAttempt()
+            val first = launch(start = CoroutineStart.UNDISPATCHED) {
+                assertTrue(CommentCaptcha.verify(challenge, attempt))
+            }
+            val otherChallenge = CommentCaptchaChallenge(challenge.captchaId)
+            val second = launch(start = CoroutineStart.UNDISPATCHED) {
+                assertTrue(CommentCaptcha.verify(otherChallenge, attempt))
+            }
+            CommentCaptcha.complete(challenge, "human-result")
+            first.join()
+            second.join()
+            assertNull(CommentCaptcha.challenge.value)
+            assertTrue(CommentCaptcha.applyTo(request()).header("Cookie")!!.contains("validate="))
+        }
+    }
+
+    @Test fun concurrentChallengesDoNotReopenAfterUserCancels() = runBlocking {
+        withTimeout(2000) {
+            val attempt = CommentCaptcha.captureAttempt()
+            val first = launch(start = CoroutineStart.UNDISPATCHED) {
+                assertFalse(CommentCaptcha.verify(challenge, attempt))
+            }
+            val second = launch(start = CoroutineStart.UNDISPATCHED) {
+                assertFalse(CommentCaptcha.verify(CommentCaptchaChallenge(challenge.captchaId), attempt))
+            }
+            CommentCaptcha.complete(challenge, null)
+            first.join()
+            second.join()
+            assertNull(CommentCaptcha.challenge.value)
+            // A new user request may still display the server's new challenge.
+            val retry = launch(start = CoroutineStart.UNDISPATCHED) {
+                assertFalse(CommentCaptcha.verify(challenge, CommentCaptcha.captureAttempt()))
+            }
+            assertSame(challenge, CommentCaptcha.challenge.value)
+            CommentCaptcha.complete(challenge, null)
+            retry.join()
+        }
+    }
+
+    @Test fun oldAccountRequestsCannotOpenVerificationInANewSession() = runBlocking {
+        val attempt = CommentCaptcha.captureAttempt()
+        CookieUtil.token = originalToken + "-new-session"
+        assertFalse(CommentCaptcha.verify(challenge, attempt))
+        assertNull(CommentCaptcha.challenge.value)
     }
 }

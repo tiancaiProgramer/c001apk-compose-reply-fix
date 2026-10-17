@@ -51,7 +51,6 @@ import com.example.c001apk.compose.constant.Constants.PREFIX_SEARCH
 import com.example.c001apk.compose.constant.Constants.PREFIX_TOPIC
 import com.example.c001apk.compose.constant.Constants.PREFIX_USER
 import com.example.c001apk.compose.constant.Constants.PREFIX_USER_LIST
-import com.example.c001apk.compose.constant.Constants.URL_LOGIN
 import com.example.c001apk.compose.logic.model.UpdateCheckItem
 import com.example.c001apk.compose.ui.app.AppScreen
 import com.example.c001apk.compose.ui.appupdate.AppUpdateScreen
@@ -450,9 +449,6 @@ fun MainNavigation(
                         if (navController.currentDestination?.route == Router.LOGIN.name) {
                             navController.popBackStack()
                         }
-                    },
-                    onWebLogin = {
-                        navController.navigateToWebView(url = URL_LOGIN, isLogin = true)
                     }
                 )
             }

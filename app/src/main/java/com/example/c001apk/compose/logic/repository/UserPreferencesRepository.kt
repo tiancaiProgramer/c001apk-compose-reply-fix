@@ -69,6 +69,8 @@ class UserPreferencesRepository @Inject constructor(
 
     suspend fun setIsLogin(value: Boolean) = userPreferencesDataSource.setIsLogin(value)
 
+    suspend fun saveLogin(uid: String, username: String, token: String) = userPreferencesDataSource.saveLogin(uid, username, token)
+
     suspend fun setUserAvatar(value: String) = userPreferencesDataSource.setUserAvatar(value)
 
     suspend fun setUsername(value: String) = userPreferencesDataSource.setUsername(value)

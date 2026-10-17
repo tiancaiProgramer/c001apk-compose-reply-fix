@@ -30,6 +30,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
@@ -54,6 +55,7 @@ import com.example.c001apk.compose.util.CookieUtil
 import com.example.c001apk.compose.util.CookieUtil.isLogin
 import com.example.c001apk.compose.util.DateUtils.fromToday
 import com.example.c001apk.compose.util.ReportType
+import com.example.c001apk.compose.util.makeToast
 
 /**
  * Created by bggRGjQaUbCoE on 2024/6/6
@@ -78,6 +80,7 @@ fun FeedReplyCard(
 ) {
 
     var dropdownMenuExpanded by remember { mutableStateOf(false) }
+    val context = LocalContext.current
     val performHapticClick = rememberHapticClick {}
 
     val isFeedReply by lazy { data.fetchType == "feed_reply" }
@@ -111,6 +114,8 @@ fun FeedReplyCard(
                                     null
                                 )
                             }
+                        } else {
+                            context.makeToast(context.getString(R.string.reply_login_required))
                         }
                     } else {
                         onOpenLink(data.url.orEmpty(), null)
@@ -557,6 +562,7 @@ fun ReplyRows(
 ) {
 
     var dropdownMenuExpanded by remember { mutableIntStateOf(-1) }
+    val context = LocalContext.current
     val performHapticClick = rememberHapticClick {}
 
     Column(
@@ -584,6 +590,8 @@ fun ReplyRows(
                                         reply.id.orEmpty(),
                                         reply.username.orEmpty()
                                     )
+                                } else {
+                                    context.makeToast(context.getString(R.string.reply_login_required))
                                 }
                             },
                             onLongClick = {
