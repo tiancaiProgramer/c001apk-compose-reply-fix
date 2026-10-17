@@ -177,6 +177,7 @@ class MainActivity : ComponentActivity() {
                             resetBadge = viewModel::resetBadge,
                             widthSizeClass = widthSizeClass,
                         )
+                        com.example.c001apk.compose.ui.selfupdate.StartupUpdateCheck()
                     }
                 }
             }

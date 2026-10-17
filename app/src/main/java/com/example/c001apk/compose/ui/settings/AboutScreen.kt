@@ -94,6 +94,7 @@ fun AboutScreen(
                 headlineText = "版本",
                 supportingText = "${BuildConfig.VERSION_NAME}(${BuildConfig.VERSION_CODE})"
             ) { }
+            com.example.c001apk.compose.ui.selfupdate.SelfUpdateSettings()
             BasicListItem(
                 leadingImageVector = Icons.Outlined.Code,
                 headlineText = "本项目地址 · tiancaiProgramer",

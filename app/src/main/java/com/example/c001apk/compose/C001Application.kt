@@ -27,6 +27,7 @@ class C001Application : Application() {
         super.onCreate()
 
         c001Application = this
+        com.example.c001apk.compose.logic.update.SelfUpdateRepository.schedule(this)
         if (materialYou) {
             DynamicColors.applyToActivitiesIfAvailable(this)
         }
